@@ -13,34 +13,34 @@ checkdepends=""
 install=""
 subpackages="$pkgname-dev"
 source="systemd-$pkgver.tar.gz::https://github.com/systemd/systemd/archive/refs/tags/v$pkgver.tar.gz
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0001-binfmt-Don-t-install-dependency-links-at-install-tim.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0001-systemd.pc.in-use-ROOTPREFIX-without-suffixed-slash.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0001-test-parse-argument-Include-signal.h.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0002-don-t-use-glibc-specific-qsort_r.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0003-implment-systemd-sysv-install-for-OE.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0003-missing_type.h-add-__compare_fn_t-and-comparison_fn_.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0004-add-fallback-parse_printf_format-implementation.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0005-src-basic-missing.h-check-for-missing-strndupa.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0006-Include-netinet-if_ether.h.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0007-don-t-fail-if-GLOB_BRACE-and-GLOB_ALTDIRFUNC-is-not-.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0008-add-missing-FTW_-macros-for-musl.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0009-fix-missing-of-__register_atfork-for-non-glibc-build.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0010-Use-uintmax_t-for-handling-rlim_t.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0011-test-sizeof.c-Disable-tests-for-missing-typedefs-in-.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0012-don-t-pass-AT_SYMLINK_NOFOLLOW-flag-to-faccessat.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0013-Define-glibc-compatible-basename-for-non-glibc-syste.patch	
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0014-Do-not-disable-buffering-when-writing-to-oom_score_a.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0015-distinguish-XSI-compliant-strerror_r-from-GNU-specif.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0016-Hide-__start_BUS_ERROR_MAP-and-__stop_BUS_ERROR_MAP.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0017-missing_type.h-add-__compar_d_fn_t-definition.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0018-avoid-redefinition-of-prctl_mm_map-structure.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0019-Handle-missing-LOCK_EX.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0020-Fix-incompatible-pointer-type-struct-sockaddr_un.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0021-test-json.c-define-M_PIl.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0022-do-not-disable-buffer-in-writing-files.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0025-Handle-__cpu_mask-usage.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0026-Handle-missing-gshadow.patch
-	https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0028-missing_syscall.h-Define-MIPS-ABI-defines-for-musl.patch
+	0001-binfmt-Don-t-install-dependency-links-at-install-tim.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0001-binfmt-Don-t-install-dependency-links-at-install-tim.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0001-systemd.pc.in-use-ROOTPREFIX-without-suffixed-slash.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0001-systemd.pc.in-use-ROOTPREFIX-without-suffixed-slash.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0001-test-parse-argument-Include-signal.h.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0001-test-parse-argument-Include-signal.h.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0002-don-t-use-glibc-specific-qsort_r.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0002-don-t-use-glibc-specific-qsort_r.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0003-implment-systemd-sysv-install-for-OE.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0003-implment-systemd-sysv-install-for-OE.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0003-missing_type.h-add-__compare_fn_t-and-comparison_fn_.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0003-missing_type.h-add-__compare_fn_t-and-comparison_fn_.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0004-add-fallback-parse_printf_format-implementation.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0004-add-fallback-parse_printf_format-implementation.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0005-src-basic-missing.h-check-for-missing-strndupa.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0005-src-basic-missing.h-check-for-missing-strndupa.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0006-Include-netinet-if_ether.h.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0006-Include-netinet-if_ether.h.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0007-don-t-fail-if-GLOB_BRACE-and-GLOB_ALTDIRFUNC-is-not-.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0007-don-t-fail-if-GLOB_BRACE-and-GLOB_ALTDIRFUNC-is-not-.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0008-add-missing-FTW_-macros-for-musl.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0008-add-missing-FTW_-macros-for-musl.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0009-fix-missing-of-__register_atfork-for-non-glibc-build.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0009-fix-missing-of-__register_atfork-for-non-glibc-build.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0010-Use-uintmax_t-for-handling-rlim_t.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0010-Use-uintmax_t-for-handling-rlim_t.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0011-test-sizeof.c-Disable-tests-for-missing-typedefs-in-.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0011-test-sizeof.c-Disable-tests-for-missing-typedefs-in-.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0012-don-t-pass-AT_SYMLINK_NOFOLLOW-flag-to-faccessat.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0012-don-t-pass-AT_SYMLINK_NOFOLLOW-flag-to-faccessat.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0013-Define-glibc-compatible-basename-for-non-glibc-syste.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0013-Define-glibc-compatible-basename-for-non-glibc-syste.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0014-Do-not-disable-buffering-when-writing-to-oom_score_a.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0014-Do-not-disable-buffering-when-writing-to-oom_score_a.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0015-distinguish-XSI-compliant-strerror_r-from-GNU-specif.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0015-distinguish-XSI-compliant-strerror_r-from-GNU-specif.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0016-Hide-__start_BUS_ERROR_MAP-and-__stop_BUS_ERROR_MAP.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0016-Hide-__start_BUS_ERROR_MAP-and-__stop_BUS_ERROR_MAP.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0017-missing_type.h-add-__compar_d_fn_t-definition.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0017-missing_type.h-add-__compar_d_fn_t-definition.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0018-avoid-redefinition-of-prctl_mm_map-structure.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0018-avoid-redefinition-of-prctl_mm_map-structure.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0019-Handle-missing-LOCK_EX.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0019-Handle-missing-LOCK_EX.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0020-Fix-incompatible-pointer-type-struct-sockaddr_un.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0020-Fix-incompatible-pointer-type-struct-sockaddr_un.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0021-test-json.c-define-M_PIl.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0021-test-json.c-define-M_PIl.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0022-do-not-disable-buffer-in-writing-files.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0022-do-not-disable-buffer-in-writing-files.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0025-Handle-__cpu_mask-usage.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0025-Handle-__cpu_mask-usage.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0026-Handle-missing-gshadow.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0026-Handle-missing-gshadow.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
+	0028-missing_syscall.h-Define-MIPS-ABI-defines-for-musl.patch::https://git.openembedded.org/openembedded-core/plain/meta/recipes-core/systemd/systemd/0028-missing_syscall.h-Define-MIPS-ABI-defines-for-musl.patch?id=88cfba0762fe3bb6f593901f9a673b373534b756
 	1000-inc-netdev.patch
 "
 patch_args="-d systemd-$pkgver -p1"
